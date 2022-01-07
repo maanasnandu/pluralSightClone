@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bl{
+    display: block;
+}
+
+ul, ol{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.color{
+    color:black;
+}
+.fontSize{
+    font-size: 15px;
+}
+.fontSize2{
+    font-size: 22px;
+}
+
+.noul{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.fixed{
+    position:fixed
+}
