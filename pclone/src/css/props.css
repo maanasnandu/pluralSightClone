@@ -16,6 +16,11 @@ ul, ol{
 .color{
     color:black;
 }
+
+.color2{
+    color:white;
+}
+
 .fontSize{
     font-size: 15px;
 }
@@ -33,4 +38,15 @@ ul, ol{
 
 .fixed{
     position:fixed
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+.abs{
+    position: absolute;
+}
+.rel{
+    position: relative;
 }

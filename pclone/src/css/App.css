@@ -1,9 +1,12 @@
+
+.app-content{
+    flex:2;
+    padding: 20px 0px;
+
+}
+
 .sidebar{
-    width: 275px;
-    top:0px;
-    left:0px;
-    bottom: 0px;
-    
+    width: 275px;   
 }
 
 .sidebar .logo{
@@ -88,6 +91,105 @@
 }
 
 .blk{
-    display: block;
-    
+    display: block;   
 }
+
+.home-page{
+
+}
+
+.home-page .section{
+
+}
+
+.home-page .section .title{
+    margin-bottom: 20px;
+}
+
+.home-page .section .tutors{
+
+}
+
+.home-page .section .tutors .tutor{
+    position: relative;
+    border:0px;
+    
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 0px;
+
+}
+
+
+.home-page .section .tutors .tutor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.home-page .section .tutors .tutor:hover{
+
+}
+
+
+.home-page .section-b{
+    margin-top: 50px;
+}
+
+.home-page .section-b .courses{}
+
+.home-page .section-b .courses .block{
+    width: 250px;
+    height: 375px;
+    border-radius: 20px;
+    background-size: cover !important;
+}
+
+.home-page .section-b .courses .block .user{
+  padding: 20px;
+  z-index: 1;
+}
+
+.home-page .section-b .courses .block .user .pic{
+
+    width: 40px;
+    height: 40px;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    padding:3px;
+    margin-right: 10px;
+}
+
+.home-page .section-b .courses .block .user .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.popular-course{
+    padding: 10px 10px;
+}
+
+.home-page .section-b .courses .block .user .meta{}
+
+.home-page .section-b .courses .block .user .meta .name{}
+
+.home-page .section-b .courses .block .user .meta .uname{}
+
+
+.home-page .section-b .courses .block .dura{
+    top:95px;
+
+    background:#a6d409;
+    font-size: 10px;
+    color: white;
+    line-height: 1;
+    padding: 8px 8px;
+    border-radius: 10px;
+   margin: 10px;
+}
+
+
