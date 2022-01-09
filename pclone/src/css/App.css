@@ -192,4 +192,13 @@
    margin: 10px;
 }
 
+.home-page .section-b .courses .block .course-title {
+    bottom: 10px;
+    background: #636e7287;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+}
+
 

@@ -71,6 +71,12 @@ function HomePage() {
                         <h2 className='name'>{popularCourse[i].duration}</h2>
 
                     </div>
+
+                    <div className='course-title abs'>
+
+                        <h2 className='name'>{popularCourse[i].title}</h2>
+
+                    </div>
                 </div>
 
             </a>
