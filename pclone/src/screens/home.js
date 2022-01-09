@@ -4,6 +4,7 @@ import "../css/App.css";
 
 import Course2 from "../ui/wild.jpg";
 import Course1 from "../ui/film-manifesto.jfif";
+import Course3 from "../ui/archi.jfif";
 
 function HomePage() {
 
@@ -13,7 +14,7 @@ function HomePage() {
             title: "Film-making basics",
             tutor: {
                 ID: 1,
-                name: "Blah blah",
+                name: "J.Hik",
                 username: "blah1234",
                 dp: "https://placeimg.com/50/50/animals?tutor-" + 1, 
             },
@@ -25,13 +26,42 @@ function HomePage() {
             title: "Wildlife conservation",
             tutor: {
                 ID: 2,
-                name: "Abcd efgh man",
+                name: "A.Bcdef",
                 username: "abcdef123",
-                dp: "https://placeimg.com/50/50/animals?tutor-" + 1, 
+                dp: "https://placeimg.com/50/50/animals?tutor-" + 2, 
             },
             duration: "16 min",
             poster: Course2
+        },
+        {
+            ID: 3,
+            title: "Intro to Architecture",
+            tutor: {
+                ID: 3,
+                name: "M.Nopqr",
+                username: "mnopqr",
+                dp: "https://placeimg.com/50/50/animals?tutor-" + 3, 
+            },
+            duration: "40 min",
+            poster: Course3
         }
+    ])
+
+    const [topTutors, setTopTutorList] = useState([
+        {
+                ID: 1,
+                name: "Tutor 1",
+                username: "abc123",
+                dp: "https://placeimg.com/50/50/animals?tutor-" + 4, 
+           
+        },
+        {
+            ID: 2,
+            name: "Tutor 2",
+            username: "abc4567",
+            dp: "https://placeimg.com/50/50/animals?tutor-" + 5, 
+       
+        },
     ])
 
     var tutorList= [];
@@ -83,6 +113,30 @@ function HomePage() {
         )
     }
 
+    var topTutorList= [];
+
+    for(let i = 0; i<topTutors.length; i++){
+        topTutorList.push(
+
+            <a href='#' className='user-block rel noul' key={"top-tutors-" + i}>
+
+                    <div className='user aic flex'>
+                        <div className='pic'>
+                            <img src={topTutors[i].dp} className='bl'/>
+                        </div>
+                        <div className='meta rel'>
+                            <h2 className='fontSize name color'>{topTutors[i].name}</h2>
+                            <h2 className='fontSize uname color'>@{topTutors[i].username}</h2>
+                        </div>
+                    </div>
+
+            </a>
+
+
+
+        )
+    }
+
     return (
         <div className='home-page rel'>
             {/* Tutors Online */}
@@ -100,6 +154,15 @@ function HomePage() {
 
                 <div className='courses rel flex'>
                     {courseList}
+                </div>
+            </div>
+
+             {/* Top Tutors/Courses */}
+             <div className='section rel'>
+                <h2 className='title fontSize2'>Top Tutors</h2>
+
+                <div className='top-tutors rel flex'>
+                    {topTutorList}
                 </div>
             </div>
             

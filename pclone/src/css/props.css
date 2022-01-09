@@ -50,3 +50,7 @@ button {
 .rel{
     position: relative;
 }
+
+.aic{
+    align-items: center;
+}
